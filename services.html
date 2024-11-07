@@ -2,315 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Sessions - Well Being Expression</title>
-    <meta name="description" content="Explore the variety of holistic art therapy sessions offered by Well Being Expression to enhance your mental well-being through creative expression.">
-    <meta name="keywords" content="Art Therapy Sessions, Holistic Art Therapy, Well Being Expression, Mental Health Support, Creative Workshops, Holyhead, Anglesey, UK">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Our Sessions - Wellbeing Expressions</title>
+    <meta name="description" content="Explore our holistic art therapy sessions to enhance mental well-being through creative expression at Wellbeing Expressions.">
+    <meta name="keywords" content="Art Therapy, Holistic Therapy, Mental Health, Creativity, Workshops, Wellbeing Expressions, Anglesey, UK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link 
-        rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous"
-    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #FDF6E3;
-            color: #333;
-            line-height: 1.6;
-        }
-        .navbar {
-            background-color: #FFFFFF;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .navbar-brand {
-            font-weight: bold;
-            color: #D35400 !important;
-        }
-        .nav-link {
-            color: #333 !important;
-            margin-right: 1rem;
-        }
-        .nav-link:hover {
-            color: #D35400 !important;
-        }
-        .navbar-toggler {
-            border: none;
-        }
-        .navbar-toggler-icon {
-            color: #D35400;
-            font-size: 1.5em;
-        }
-        /* Page Header */
-        .page-header {
-            background: linear-gradient(
-                    rgba(0, 0, 0, 0.3), 
-                    rgba(0, 0, 0, 0.3)
-                ), 
-                url('images/services-header.jpg') no-repeat center center/cover;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 150px 0;
-            position: relative;
-        }
-        .page-header h1 {
-            font-size: 3em;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        /* Section Titles */
-        .section-title {
-            font-size: 2.5em;
-            margin: 4rem 0 2rem;
-            text-align: center;
-            color: #D35400;
-            position: relative;
-        }
-        .section-title::after {
-            content: '';
-            width: 50px;
-            height: 3px;
-            background-color: #D35400;
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        /* Services Section */
-        .services {
-            padding: 4rem 0;
-        }
-        .service-item {
-            margin-bottom: 4rem;
-        }
-        .service-item img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 1.5rem;
-        }
-        .service-item h3 {
-            color: #D35400;
-            margin-bottom: 1rem;
-        }
-        .service-item p {
-            font-size: 1.1em;
-        }
-        .service-item ul {
-            list-style: none;
-            padding: 0;
-        }
-        .service-item ul li {
-            padding-left: 1.5rem;
-            position: relative;
-            margin-bottom: 0.5rem;
-        }
-        .service-item ul li::before {
-            content: "\f00c";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            color: #D35400;
-        }
-        .btn-book {
-            background-color: #D35400;
-            border-color: #D35400;
-            color: #FFFFFF;
-            margin-top: 1rem;
-        }
-        .btn-book:hover {
-            background-color: #E67E22;
-            border-color: #E67E22;
-        }
-        /* Contact Section */
-        .contact {
-            background-color: #F8F9FA;
-            padding: 4rem 0;
-        }
-        .contact h2 {
-            margin-bottom: 2rem;
-        }
-        .contact-info {
-            font-size: 1.1em;
-        }
-        .contact-form {
-            margin-top: 2rem;
-        }
-        /* Footer */
-        .footer {
-            background-color: #343A40;
-            color: #FFFFFF;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        .footer a {
-            color: #D35400;
-        }
-    </style>
+    <link rel="stylesheet" href="service.css">
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Well Being Expression</a>
-            <button 
-                class="navbar-toggler" 
-                type="button"
-                data-toggle="collapse" 
-                data-target="#navbarNav" 
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars" style="color:#D35400;"></i>
-                </span>
+            <a class="navbar-brand" href="index.html">Wellbeing Expressions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#introduction">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#about-us">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#meet-may">Meet May</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="services.html">Sessions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#benefits">Benefits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#faqs">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact Us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="index.html#about-us">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="index.html#meet-may">Meet May</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link active" href="sessions.html">Sessions</a></li>
+                    <li class="nav-item"><a class="nav-link custom-link" href="index.html#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
+    <section class="page-header hero-section">
+        <div class="container text-center">
             <h1>Our Sessions</h1>
+            <p>Explore, Express, and Embrace Creativity for Wellbeing</p>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services">
+    <!-- Sessions Section -->
+    <section class="sessions py-5">
         <div class="container">
-            <h2 class="section-title">Explore Our Art Therapy Sessions</h2>
+            <h2 class="section-title text-center mb-4">Explore Our Art Therapy Sessions</h2>
+            <p class="text-center">Discover tailored sessions to foster self-expression, connection, and healing through creativity. No experience needed—just a desire to explore and grow.</p>
+
+            <!-- Discovery Call -->
+            <div class="text-center mb-5">
+                <p>Not sure which session suits you best? Book a <strong>free 10-minute discovery call</strong> to discuss your needs and the ideal approach for you.</p>
+                <a href="#contact" class="btn btn-accent mt-3">Book a Discovery Call</a>
+            </div>
 
             <!-- Service 1: Group Workshops -->
-            <div class="service-item">
+            <div class="service-item mb-5">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="images/group-workshop.jpg" alt="Group Workshops">
+                        <img src="images/group-workshop.jpg" alt="Group Workshops" class="img-fluid rounded shadow">
                     </div>
                     <div class="col-md-6">
-                        <h3>Group Workshops</h3>
-                        <p>Our group workshops are designed to foster connection and creativity among participants. Engage in collaborative art projects and share your experiences in a supportive environment.</p>
+                        <h3>Group Art Therapy Workshops</h3>
+                        <p>Our group workshops provide a supportive space to explore emotions and enhance well-being through creative expression. Ideal for friends, communities, and colleagues.</p>
                         <ul>
-                            <li><strong>Duration:</strong> 2 hours per session</li>
-                            <li><strong>Group Size:</strong> 5-15 participants</li>
-                            <li><strong>Suitable For:</strong> Community groups, friends, and organisations</li>
-                            <li><strong>Locations:</strong> Holyhead, Anglesey, Bangor</li>
-                            <li><strong>Price:</strong> £25 per person</li>
+                            <li><strong>Duration:</strong> 2 hours</li>
+                            <li><strong>Group Size:</strong> 5-10 participants</li>
+                            <li><strong>Price:</strong> £200 - £250 per session</li>
                         </ul>
-                        <a href="#contact" class="btn btn-book">Book a Workshop</a>
+                        <a href="#contact" class="btn btn-accent mt-3">Book a Workshop</a>
                     </div>
                 </div>
             </div>
 
             <!-- Service 2: One-to-One Sessions -->
-            <div class="service-item">
+            <div class="service-item mb-5">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-2">
-                        <img src="images/one-to-one.jpg" alt="One-to-One Sessions">
+                        <img src="images/one-to-one.jpg" alt="One-to-One Sessions" class="img-fluid rounded shadow">
                     </div>
                     <div class="col-md-6 order-md-1">
-                        <h3>One-to-One Sessions</h3>
-                        <p>Experience personalised art therapy sessions tailored to your individual needs. Explore your emotions and thoughts through creative expression in a confidential setting.</p>
+                        <h3>One-to-One Art Therapy Sessions</h3>
+                        <p>Experience personalized art therapy, focusing on your unique needs. Explore emotions, gain insights, and foster personal growth in a private setting.</p>
                         <ul>
-                            <li><strong>Duration:</strong> 1 hour per session</li>
-                            <li><strong>Flexible Scheduling:</strong> Daytime and evening appointments available</li>
-                            <li><strong>Location:</strong> Private studio in Holyhead or your preferred location</li>
-                            <li><strong>Price:</strong> £40 per session</li>
+                            <li><strong>Duration:</strong> 1 hour</li>
+                            <li><strong>Price:</strong> £30 per session</li>
                         </ul>
-                        <a href="#contact" class="btn btn-book">Schedule a Session</a>
+                        <a href="#contact" class="btn btn-accent mt-3">Schedule a Session</a>
                     </div>
                 </div>
             </div>
 
             <!-- Service 3: Corporate Workshops -->
-            <div class="service-item">
+            <div class="service-item mb-5">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="images/corporate-workshop.jpg" alt="Corporate Workshops">
+                        <img src="images/corporate-workshop.jpg" alt="Corporate Workshops" class="img-fluid rounded shadow">
                     </div>
                     <div class="col-md-6">
-                        <h3>Corporate Workshops</h3>
-                        <p>Boost team morale and creativity with our corporate art therapy workshops. Designed to enhance communication, collaboration, and stress management within your team.</p>
+                        <h3>Corporate Wellness Workshops</h3>
+                        <p>Engage your team with creative workshops designed to foster collaboration, reduce stress, and enhance workplace wellness. Customizable for team dynamics.</p>
                         <ul>
-                            <li><strong>Duration:</strong> Half-day or full-day workshops</li>
-                            <li><strong>Customisable Content:</strong> Tailored to meet your team's needs</li>
-                            <li><strong>Location:</strong> At your office or an external venue</li>
+                            <li><strong>Duration:</strong> Half-day or full-day</li>
                             <li><strong>Price:</strong> Starting from £500</li>
                         </ul>
-                        <a href="#contact" class="btn btn-book">Enquire Now</a>
+                        <a href="#contact" class="btn btn-accent mt-3">Enquire Now</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Service 4: Art Therapy Retreats -->
-            <div class="service-item">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-md-2">
-                        <img src="images/retreat.jpg" alt="Art Therapy Retreats">
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <h3>Art Therapy Retreats</h3>
-                        <p>Immerse yourself in a weekend of creativity and relaxation. Our retreats offer a blend of art therapy, mindfulness, and nature exploration to rejuvenate your mind and spirit.</p>
-                        <ul>
-                            <li><strong>Duration:</strong> 3-day weekend retreats</li>
-                            <li><strong>Includes:</strong> Accommodation, meals, and materials</li>
-                            <li><strong>Location:</strong> Scenic venues across North Wales</li>
-                            <li><strong>Price:</strong> £600 per person</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-book">Reserve Your Spot</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 5: Special Programmes for Schools -->
-            <div class="service-item">
+            <!-- Service 4: School Programmes -->
+            <div class="service-item mb-5">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <img src="images/school-programme.jpg" alt="School Programmes">
+                        <img src="images/school-programme.jpg" alt="School Programmes" class="img-fluid rounded shadow">
                     </div>
                     <div class="col-md-6">
-                        <h3>Special Programmes for Schools</h3>
-                        <p>Our school programmes are crafted to support the emotional and social development of students through creative activities. We align our sessions with curriculum objectives and student needs.</p>
+                        <h3>Art Therapy for Schools</h3>
+                        <p>Our school programmes integrate art therapy into educational settings, helping students explore emotions and improve social skills through creative expression.</p>
                         <ul>
-                            <li><strong>Duration:</strong> Customisable (single sessions or ongoing programmes)</li>
-                            <li><strong>Age Groups:</strong> Primary and secondary school students</li>
-                            <li><strong>Location:</strong> At your school premises</li>
-                            <li><strong>Price:</strong> Contact us for a quote</li>
+                            <li><strong>Duration:</strong> Customizable for individual classes or ongoing sessions</li>
+                            <li><strong>Age Groups:</strong> Primary and secondary students</li>
+                            <li><strong>Price:</strong> Contact us for details</li>
                         </ul>
-                        <a href="#contact" class="btn btn-book">Contact for Details</a>
+                        <a href="#contact" class="btn btn-accent mt-3">Contact for Details</a>
                     </div>
                 </div>
             </div>
@@ -318,79 +128,52 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact py-5 bg-light" id="contact">
         <div class="container">
-            <h2 class="section-title">Get in Touch to Book a Session</h2>
-            <p class="contact-info">
-                Ready to embark on a creative journey towards enhanced well-being? Reach out to us to book a session or to find out more about our offerings.
-            </p>
-            <p class="contact-info">
-                <strong>Email:</strong> <a href="mailto:info@wellbeingexpression.co.uk">info@wellbeingexpression.co.uk</a><br>
-                <strong>Phone:</strong> 01234 567890
-            </p>
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputName">Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Your Name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
-                        </div>
+            <h2 class="section-title text-center mb-4">Get in Touch</h2>
+            <p class="text-center">Ready to begin? Reach out to learn more or to book a session that best suits your needs.</p>
+            <form class="contact-form mt-4">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
                     </div>
-                    <div class="form-group">
-                        <label for="inputService">Select Service</label>
-                        <select id="inputService" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>Group Workshops</option>
-                            <option>One-to-One Sessions</option>
-                            <option>Corporate Workshops</option>
-                            <option>Art Therapy Retreats</option>
-                            <option>School Programmes</option>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <select class="form-control" required>
+                            <option value="" disabled selected>Choose Session...</option>
+                            <option>Group Art Therapy Workshops</option>
+                            <option>One-to-One Art Therapy Sessions</option>
+                            <option>Corporate Wellness Workshops</option>
+                            <option>Art Therapy for Schools</option>
+                            <option>Discovery Call</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="inputMessage">Message</label>
-                        <textarea class="form-control" id="inputMessage" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-                </form>
-            </div>
+                </div>
+                <button type="submit" class="btn custom-btn btn-lg w-100">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Well Being Expression. All rights reserved.</p>
-            <p><a href="mailto:info@wellbeingexpression.co.uk">info@wellbeingexpression.co.uk</a> | Phone: 01234 567890</p>
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Wellbeing Expressions. All rights reserved.</p>
+            <p><a href="mailto:info@wellbeingexpressions.co.uk">info@wellbeingexpressions.co.uk</a> | Phone: 01234 567890</p>
             <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
-    <!-- Font Awesome -->
-    <script 
-        src="https://kit.fontawesome.com/a076d05399.js" 
-        crossorigin="anonymous"
-    ></script>
-    <script 
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
-        crossorigin="anonymous"
-    ></script>
-    <script 
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
-        crossorigin="anonymous"
-    ></script>
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" 
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
-        crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGz6lvQJ6myAq+U9pN2TZkzFQ7ysh7AroexLtR4zI2ZDz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-9ndCyUaPBp1zv1tG05F6jI5zX/j9WIbtsufKmc7eg9i6aVFlJuiqztJ8ME6K6oxl" crossorigin="anonymous"></script>
 </body>
 </html>

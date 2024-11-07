@@ -1,0 +1,219 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Sanchez', serif;
+    background-color: #EDF7F3;
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #4A4A4A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-link {
+    color: #FFD9C0 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-link:hover {
+    color: #D06A6A;
+    transform: scale(1.1);
+    border-bottom: 2px solid #D06A6A;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/services-header.jpg') no-repeat center center/cover;
+    color: #FFD9C0;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: #4A4A4A;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #D06A6A;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Service Item Styles */
+.service-item {
+    background-color: #FFF;
+    color: #4A4A4A;
+    border: 1px solid #D2B48C;
+    border-radius: 10px;
+    padding: 30px;
+    transition: box-shadow 0.3s ease, transform 0.3s;
+    margin-bottom: 4rem;
+}
+
+.service-item:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.service-item h3 {
+    color: #D06A6A;
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.service-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-item ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-item ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #D06A6A;
+    position: absolute;
+    left: 0;
+}
+
+/* Button Styles */
+.custom-btn, .btn-accent {
+    background-color: #E57373;
+    color: #EDF7F3;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    border: 2px solid #C05C5C;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn:hover, .btn-accent:hover {
+    background-color: #C05C5C;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #FFEAD2;
+    padding: 4rem 0;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    background-color: #FFF5EE;
+    color: #4A4A4A;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+    background-color: #FFE4B5;
+    border-color: #D06A6A;
+    box-shadow: none;
+}
+
+.contact-form button {
+    background-color: #E57373;
+    color: #EDF7F3;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #C05C5C;
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #4A4A4A;
+    padding: 2rem 0;
+    text-align: center;
+    color: #FFD9C0;
+}
+
+.footer a {
+    color: #FFD9C0;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer a:hover {
+    color: #D06A6A;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        padding: 20px;
+    }
+}
