@@ -40,9 +40,9 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url('https://res.cloudinary.com/dsedezvzs/image/upload/v1730286775/hero-3_ntm5uw.jpg') no-repeat center bottom/cover;
     color: #F8F1E1;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
