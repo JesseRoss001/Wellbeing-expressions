@@ -83,29 +83,12 @@ body {
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Accent Button */
-.btn-accent {
-    background-color: #D06A6A;
-    color: #4A4A4A;
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-family: 'Raleway', sans-serif;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn-accent:hover {
-    background-color: #FFD9C0;
-    color: #4A4A4A;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-}
-
 /* Section Styles */
 .section {
     padding: 60px 0;
 }
 
-.about-section, .workshops-section, .meet-may-section {
+.about-section, .workshops-section {
     background-color: #FFD9C0;
     border-top: 3px solid #E57373;
 }
@@ -141,6 +124,7 @@ body {
     text-align: center;
 }
 
+/* Service Item */
 .service-item {
     background-color: #FFF;
     color: #4A4A4A;
@@ -155,31 +139,28 @@ body {
     transform: scale(1.03);
 }
 
-/* Link Styles */
-a {
-    color: #E57373;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 0.3s, border-bottom 0.3s;
+.custom-icon {
+    color: #D06A6A;
+    transition: color 0.3s, transform 0.3s;
 }
 
-a:hover {
-    color: #D06A6A;
-    border-bottom: 1px solid #D06A6A;
+.custom-icon:hover {
+    color: #E57373;
+    transform: rotate(10deg);
 }
 
 /* Gallery Styles */
-.gallery-section .gallery-item {
+.gallery-item {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
 }
 
-.gallery-section .gallery-item img {
+.gallery-item img {
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.gallery-section .gallery-item:hover img {
+.gallery-item:hover img {
     transform: scale(1.05);
     filter: brightness(95%);
 }
@@ -244,24 +225,17 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Custom Icon Styles */
-.custom-icon {
-    color: #D06A6A;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.custom-icon:hover {
-    color: #E57373;
-    transform: rotate(10deg);
+.footer-logo {
+    height: 50px;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    .text-center h1 {
-        font-size: 2.5rem;
+    .hero-section h1 {
+        font-size: 2.2rem;
     }
 
-    .text-center p {
+    .hero-section p {
         font-size: 1.25rem;
     }
 
@@ -269,11 +243,7 @@ a:hover {
         padding: 40px 0;
     }
 
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-section p {
-        font-size: 1.25rem;
+    .custom-link {
+        font-size: 0.9rem;
     }
 }
