@@ -1,17 +1,16 @@
-/*//* Global Styles */
+/* Global Styles */
 body {
     margin: 0;
     font-family: 'Sanchez', serif;
-    background-color: #E8E9EB; /* Anti-flash White */
+    background-color: #E8E9EB; /* Anti-flash white */
     color: #313638; /* Onyx */
     line-height: 1.6;
 }
+
 @font-face {
     font-family: 'GT Super Display Regular';
     src: url('GT Super Display Regular.ttf') format('truetype');
 }
-
-
 
 @font-face {
     font-family: 'CenzoFlare-Black';
@@ -34,7 +33,7 @@ h3, h4, h5, h6, a {
 
 /* Navbar */
 .custom-navbar {
-    background: linear-gradient(90deg, #F06543, #F09D51, #E0DFD5); /* Gradient: Tomato → Sandy Brown → Alabaster */
+    background: linear-gradient(90deg, #F06543, #9BC969); /* Gradient from Tomato to Bright Light Green */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -43,7 +42,7 @@ h3, h4, h5, h6, a {
 }
 
 .custom-link {
-    color: #080808 !important; /* Anti-flash White */
+    color: black !important;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1rem;
@@ -52,38 +51,34 @@ h3, h4, h5, h6, a {
 }
 
 .custom-link:hover {
-    color: #F06543; /* Tomato */
+    color: #9BC969; /* Bright Light Green */
     transform: scale(1.1);
-    border-bottom: 2px solid #F06543;
+    border-bottom: 2px solid #9BC969;
 }
 
 /* Page Header */
 .page-header {
     background: url('https://res.cloudinary.com/dsedezvzs/image/upload/v1730966120/hero_tbnxvx.jpg') no-repeat center center/cover;
-    color: #313638; /* Onyx */
+    color: #FFFFFF; /* White text for better visibility */
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.8);
 }
 
-
-.page-header h1 
-    {
-        font-size: 3rem;
-       
-        color: #F06543; /* Onyx */
-        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
-    }
-
+.page-header h1 {
+    font-size: 3rem;
+    color: #FFFFFF; /* White text */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+}
 
 .page-header p {
     font-size: 1.5rem;
-    color: #000000; /* Onyx */
-    text-shadow: 2px 2px 3px rgba(246, 242, 242, 0.4);
+    color: #FFFFFF; /* White text */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* Section Styles */
@@ -93,7 +88,7 @@ h3, h4, h5, h6, a {
 
 .sessions-section {
     background-color: #E0DFD5; /* Alabaster */
-    border-top: 3px solid #F06543; /* Tomato */
+    border-top: 3px solid #9BC969; /* Bright Light Green */
 }
 
 .contact-section {
@@ -103,7 +98,6 @@ h3, h4, h5, h6, a {
 
 .section h2 {
     color: #313638; /* Onyx */
-  
     font-weight: bold;
     text-align: center;
     position: relative;
@@ -114,7 +108,7 @@ h3, h4, h5, h6, a {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #F06543; /* Tomato */
+    background-color: #F09D51; /* Sandy Brown */
     margin: 10px auto;
     border-radius: 2px;
 }
@@ -129,9 +123,9 @@ h3, h4, h5, h6, a {
 
 /* Service Item */
 .service-item {
-    background-color: #E8E9EB; /* Anti-flash White */
+    background-color: #E8E9EB; /* Anti-flash white */
     color: #313638; /* Onyx */
-    border: 1px solid #F09D51; /* Sandy Brown */
+    border: 1px solid #9BC969; /* Bright Light Green */
     border-radius: 10px;
     padding: 30px;
     transition: box-shadow 0.3s ease, transform 0.3s;
@@ -152,7 +146,6 @@ h3, h4, h5, h6, a {
 .service-item h3 {
     color: #F06543; /* Tomato */
     margin-bottom: 1rem;
-  
 }
 
 .service-item ul {
@@ -170,15 +163,15 @@ h3, h4, h5, h6, a {
     content: "\f00c"; /* FontAwesome Check Icon */
     font-family: FontAwesome;
     font-weight: 900;
-    color: #F06543; /* Tomato */
+    color: #9BC969; /* Bright Light Green */
     position: absolute;
     left: 0;
 }
 
 /* Button Styles */
 .custom-btn {
-    background: linear-gradient(45deg, #F06543, #F09D51); /* Gradient: Tomato → Sandy Brown */
-    color: #E8E9EB; /* Anti-flash White */
+    background: linear-gradient(45deg, #9BC969, #F09D51); /* Gradient from Bright Light Green to Sandy Brown */
+    color: #313638; /* Onyx */
     border-radius: 50px;
     padding: 12px 30px;
     font-weight: bold;
@@ -189,7 +182,7 @@ h3, h4, h5, h6, a {
 }
 
 .custom-btn:hover {
-    background: linear-gradient(45deg, #F09D51, #F06543); /* Reverse Gradient on Hover */
+    background: linear-gradient(45deg, #F09D51, #9BC969); /* Reverse Gradient on hover */
     transform: scale(1.05);
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
@@ -198,9 +191,9 @@ h3, h4, h5, h6, a {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-    background-color: #E8E9EB; /* Anti-flash White */
+    background-color: #E8E9EB; /* Anti-flash white */
     color: #313638; /* Onyx */
-    border: 1px solid #F06543; /* Tomato */
+    border: 1px solid #9BC969; /* Bright Light Green */
     border-radius: 5px;
     padding: 10px;
     transition: background-color 0.3s, border-color 0.3s;
@@ -210,13 +203,13 @@ h3, h4, h5, h6, a {
 .contact-form select:focus,
 .contact-form textarea:focus {
     background-color: #E0DFD5; /* Alabaster */
-    border-color: #F06543; /* Tomato */
+    border-color: #9BC969; /* Bright Light Green */
     box-shadow: none;
 }
 
 .contact-form button {
-    background: linear-gradient(45deg, #F06543, #F09D51); /* Gradient: Tomato → Sandy Brown */
-    color: #E8E9EB; /* Anti-flash White */
+    background: linear-gradient(45deg, #9BC969, #F09D51); /* Gradient from Bright Light Green to Sandy Brown */
+    color: #313638; /* Onyx */
     border-radius: 8px;
     padding: 12px 30px;
     font-weight: bold;
@@ -225,8 +218,7 @@ h3, h4, h5, h6, a {
 }
 
 .contact-form button:hover {
-    background: linear-gradient(45deg, #F09D51, #F06543); /* Reverse Gradient on Hover */
-    color: #E8E9EB; /* Anti-flash White */
+    background: linear-gradient(45deg, #F09D51, #9BC969); /* Reverse Gradient on hover */
     transform: scale(1.05);
 }
 
@@ -235,11 +227,11 @@ h3, h4, h5, h6, a {
     background-color: #313638; /* Onyx */
     padding: 20px 0;
     text-align: center;
-    color: #E8E9EB; /* Anti-flash White */
+    color: #E8E9EB; /* Anti-flash white */
 }
 
 .footer-section a {
-    color: #F09D51; /* Sandy Brown */
+    color: #9BC969; /* Bright Light Green */
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
@@ -281,7 +273,7 @@ h3, h4, h5, h6, a {
         margin-bottom: 10px;
     }
 
-    .gallery-item img {
-        height: auto;
+    .service-item {
+        margin-bottom: 2rem;
     }
 }

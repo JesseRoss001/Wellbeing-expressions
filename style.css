@@ -1,4 +1,4 @@
-/*//* Global Styles */
+/* Global Styles */
 body {
     margin: 0;
     font-family: 'Sanchez', serif;
@@ -18,8 +18,6 @@ body {
     src: url('GT Super Display Regular.ttf') format('truetype');
 }
 
-
-
 @font-face {
     font-family: 'CenzoFlare-Black';
     src: url('CenzoFlare-Black.ttf') format('truetype');
@@ -33,12 +31,9 @@ h3, h4, h5, h6, a {
     font-family: 'GT Super Display Regular', sans-serif !important;
 }
 
-
-
-
 /* Navbar */
 .custom-navbar {
-    background: linear-gradient(90deg, #F06543, #F09D51); /* Gradient from Tomato to Sandy Brown */
+    background: linear-gradient(90deg, #F06543, #9bc969); /* Gradient from Tomato to Bright Light Green */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -47,7 +42,7 @@ h3, h4, h5, h6, a {
 }
 
 .custom-link {
-    color: #E8E9EB !important; /* Anti-flash white */
+    color: black !important; /* Changed link color to black */
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1rem;
@@ -56,15 +51,15 @@ h3, h4, h5, h6, a {
 }
 
 .custom-link:hover {
-    color: #F06543; /* Tomato */
+    color: #9bc969; /* Bright Light Green */
     transform: scale(1.1);
-    border-bottom: 2px solid #F06543;
+    border-bottom: 2px solid #9bc969;
 }
 
 /* Hero Section */
 .hero-section {
     background: url('https://res.cloudinary.com/dsedezvzs/image/upload/v1730286775/hero-3_ntm5uw.jpg') no-repeat center bottom/cover;
-    color: #313638; /* Onyx */
+    color: #FFFFFF; /* Changed to white to stand out */
     height: 60vh;
     display: flex;
     align-items: center;
@@ -76,21 +71,20 @@ h3, h4, h5, h6, a {
 
 .hero-section h1 {
     font-size: 3rem;
- 
-    color: #F06543; /* Tomato */
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
+    color: #FFFFFF; /* Changed to white */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9); /* Adjusted text-shadow to enhance readability */
 }
 
 .hero-section p {
     font-size: 1.5rem;
-    color: #000000; /* Black */
-    text-shadow: 2px 2px 3px rgba(246, 242, 242, 0.4);
+    color: #FFFFFF; /* Changed to white */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7); /* Adjusted text-shadow */
 }
 
 /* Button Styles */
 .custom-btn {
-    background: linear-gradient(45deg, #F06543, #F09D51); /* Gradient from Tomato to Sandy Brown */
-    color: #E8E9EB; /* Anti-flash white */
+    background: linear-gradient(45deg, #9bc969, #F09D51); /* Gradient from Bright Light Green to Sandy Brown */
+    color: #313638; /* Onyx */
     border-radius: 50px;
     padding: 12px 30px;
     font-weight: bold;
@@ -102,7 +96,7 @@ h3, h4, h5, h6, a {
 }
 
 .custom-btn:hover {
-    background: linear-gradient(45deg, #F09D51, #F06543); /* Reverse Gradient on hover */
+    background: linear-gradient(45deg, #F09D51, #9bc969); /* Reverse Gradient on hover */
     transform: scale(1.05);
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
@@ -114,17 +108,16 @@ h3, h4, h5, h6, a {
 
 .about-section, .workshops-section {
     background-color: #E0DFD5; /* Alabaster */
-    border-top: 3px solid #F06543; /* Tomato */
+    border-top: 3px  solid #9bc969; /* Bright Light Green */
 }
 
 .services-section, .gallery-section, .contact-section {
     background-color: #E0DFD5; /* Alabaster */
-    border-top: 3px solid #F06543; /* Tomato */
+    border-top: 3px solid #F09D51; /* Bright Light Green */
 }
 
 .section h2 {
     color: #313638; /* Onyx */
-    
     font-weight: bold;
     text-align: center;
     position: relative;
@@ -135,7 +128,7 @@ h3, h4, h5, h6, a {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #F06543; /* Tomato */
+    background-color: #F09D51; /* Bright Light Green */
     margin: 10px auto;
     border-radius: 2px;
 }
@@ -152,7 +145,7 @@ h3, h4, h5, h6, a {
 .service-item {
     background-color: #F09D51; /* Sandy Brown */
     color: #E8E9EB; /* Anti-flash white */
-    border: 1px solid #F06543; /* Tomato */
+    border: 1px solid #c0992c; /* Bright Light Green */
     border-radius: 10px;
     padding: 30px;
     transition: box-shadow 0.3s ease, transform 0.3s;
@@ -173,9 +166,8 @@ h3, h4, h5, h6, a {
 }
 
 .service-item h3 {
-    color: #F06543; /* Tomato */
+    color: #9bc969; /* Bright Light Green */
     margin-bottom: 1rem;
-   
 }
 
 .service-item p {
@@ -189,7 +181,7 @@ h3, h4, h5, h6, a {
 }
 
 .custom-icon:hover {
-    color: #F06543; /* Tomato */
+    color: #9bc969; /* Bright Light Green */
     transform: rotate(10deg);
 }
 
@@ -216,12 +208,12 @@ h3, h4, h5, h6, a {
 }
 
 .contact-section .contact-info i {
-    color: #F06543; /* Tomato */
+    color: #9bc969; /* Bright Light Green */
     margin-right: 10px;
 }
 
 .contact-section .form-control {
-    border-color: #F06543; /* Tomato */
+    border-color: #4c791c; /* Bright Light Green */
     background-color: #E8E9EB; /* Anti-flash white */
     color: #313638; /* Onyx */
     font-size: 1rem;
@@ -231,23 +223,23 @@ h3, h4, h5, h6, a {
 }
 
 .contact-section .form-control:focus {
-    border-color: #F06543; /* Tomato */
+    border-color: #9bc969; /* Bright Light Green */
     background-color: #E0DFD5; /* Alabaster */
     box-shadow: none;
 }
 
 .contact-section .btn {
-    background: linear-gradient(45deg, #F06543, #F09D51); /* Gradient from Tomato to Sandy Brown */
-    color: #E8E9EB; /* Anti-flash white */
+    background: linear-gradient(45deg, #9bc969, #F09D51); /* Gradient from Bright Light Green to Sandy Brown */
+    color: #000000; /* Anti-flash white */
     border-radius: 8px;
     font-weight: bold;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid white;
     transition: background 0.3s, transform 0.3s;
 }
 
 .contact-section .btn:hover {
-    background: linear-gradient(45deg, #F09D51, #F06543); /* Reverse Gradient on hover */
+    background: linear-gradient(45deg, #F09D51, #4c791c); /* Reverse Gradient on hover */
     color: #E8E9EB; /* Anti-flash white */
     transform: scale(1.05);
 }
@@ -260,7 +252,7 @@ h3, h4, h5, h6, a {
 }
 
 .footer-section a {
-    color: #F09D51; /* Sandy Brown */
+    color: #F09D51; /* Bright Light Green */
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
@@ -310,7 +302,6 @@ h3, h4, h5, h6, a {
         height: 80vh;
     }
 }
-
 
 .cookie-consent-banner {
     position: fixed;
