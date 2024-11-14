@@ -6,6 +6,25 @@ body {
     color: #313638; /* Onyx */
     line-height: 1.6;
 }
+@font-face {
+    font-family: 'GT Super Display Regular';
+    src: url('GT Super Display Regular.ttf') format('truetype');
+}
+
+
+
+@font-face {
+    font-family: 'CenzoFlare-Black';
+    src: url('CenzoFlare-Black.ttf') format('truetype');
+}
+
+/* Apply the fonts to specific elements */
+h1, h2 {
+    font-family: 'CenzoFlare-Black', sans-serif !important;
+}
+h3, h4, h5, h6, a {
+    font-family: 'GT Super Display Regular', sans-serif !important;
+}
 
 .container {
     width: 90%;
@@ -55,7 +74,7 @@ body {
 .page-header h1 
     {
         font-size: 3rem;
-        font-family: 'Raleway', sans-serif;
+       
         color: #F06543; /* Onyx */
         text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
     }
@@ -84,7 +103,7 @@ body {
 
 .section h2 {
     color: #313638; /* Onyx */
-    font-family: 'Raleway', sans-serif;
+  
     font-weight: bold;
     text-align: center;
     position: relative;
@@ -133,7 +152,7 @@ body {
 .service-item h3 {
     color: #F06543; /* Tomato */
     margin-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
+  
 }
 
 .service-item ul {

@@ -13,6 +13,29 @@ body {
     margin: 0 auto;
 }
 
+@font-face {
+    font-family: 'GT Super Display Regular';
+    src: url('GT Super Display Regular.ttf') format('truetype');
+}
+
+
+
+@font-face {
+    font-family: 'CenzoFlare-Black';
+    src: url('CenzoFlare-Black.ttf') format('truetype');
+}
+
+/* Apply the fonts to specific elements */
+h1, h2 {
+    font-family: 'CenzoFlare-Black', sans-serif !important;
+}
+h3, h4, h5, h6, a {
+    font-family: 'GT Super Display Regular', sans-serif !important;
+}
+
+
+
+
 /* Navbar */
 .custom-navbar {
     background: linear-gradient(90deg, #F06543, #F09D51); /* Gradient from Tomato to Sandy Brown */
@@ -53,7 +76,7 @@ body {
 
 .hero-section h1 {
     font-size: 3rem;
-    font-family: 'Raleway', sans-serif;
+ 
     color: #F06543; /* Tomato */
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
 }
@@ -75,6 +98,7 @@ body {
     transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
     border: none;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
 }
 
 .custom-btn:hover {
@@ -100,7 +124,7 @@ body {
 
 .section h2 {
     color: #313638; /* Onyx */
-    font-family: 'Raleway', sans-serif;
+    
     font-weight: bold;
     text-align: center;
     position: relative;
@@ -151,7 +175,7 @@ body {
 .service-item h3 {
     color: #F06543; /* Tomato */
     margin-bottom: 1rem;
-    font-family: 'Raleway', sans-serif;
+   
 }
 
 .service-item p {
