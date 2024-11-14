@@ -24,9 +24,10 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Wellbeing Expression Logo" height="50">
+                <img src="images/wellbeingexpressionlogo.webp" alt="Wellbeing Expression Logo" class="rounded " style="height:40px; border:1px solid black;"> 
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            <div class="lead">Wellbeing Expression</div>
+            <button class="navbar-toggler mx-auto  d-flex justify-self-center align-items-center d-md-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,27 +35,23 @@
                 <ul class="navbar-nav text-uppercase">
                     <li class="nav-item">
                         <a class="nav-link custom-link" href="index.html">
-                            <i class="fa fa-home d-none d-lg-block"></i> <span class="d-block d-lg-none"> Home </span>
+                             Home 
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link custom-link" href="#group-workshops">
-                            <i class="fa fa-users d-none d-lg-block"></i> <span class="d-block d-lg-none"> Group Workshops </span>
-                        </a>
-                    </li>
+                  
                     <li class="nav-item">
                         <a class="nav-link custom-link" href="#one-to-one">
-                            <i class="fa fa-user d-none d-lg-block"></i> <span class="d-block d-lg-none"> 1-to-1 </span>
+                             1-to-1 
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-link" href="#corporate-workshops">
-                            <i class="fa fa-briefcase d-none d-lg-block"></i> <span class="d-block d-lg-none"> Corporate Workshops </span>
+                             Corporate Workshops 
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-link" href="#school-programmes">
-                            <i class="fa fa-graduation-cap d-none d-lg-block"></i> <span class="d-block d-lg-none"> School Programmes </span>
+                             School Programmes 
                         </a>
                     </li>
                     <li class="nav-item">
@@ -71,8 +68,8 @@
     <!-- Page Header -->
     <section class="page-header hero-section">
         <div class="container text-center">
-            <h1>Our Creative Wellbeing Sessions</h1>
-            <p>Serving Holyhead and beyond with accessible, holistic wellbeing support</p>
+            <h1>Creative Wellbeing Sessions</h1>
+            <p>Based in Holyhead serving Anglesey and Beyond with, holistic wellbeing support</p>
         </div>
     </section>
 
@@ -174,6 +171,8 @@
                 <p>Reach out to discover more about our holistic sessions across Holyhead, Anglesey, and beyond. We’re here to support your creative and mental wellness journey.</p>
             </div>
             <form class="contact-form mt-4" action="submit_form.php" method="post">
+                <!-- Hidden key input field added here -->
+                <input type="hidden" name="key" value="e9ebd8af-8e78-4529-8bc6-7dc833e3b7fb">
                 <div class="row mb-3">
                     <div class="col-md-6 mb-3">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -207,7 +206,7 @@
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container text-center">
-            <img src="images/logo-footer.png" alt="Wellbeing Expression Logo" class="footer-logo mb-3">
+            <img src="images/wellbeingexpressionlogo.webp" alt="Wellbeing Expression Logo" class="footer-logo rounded mb-3" style="height:100px; border:1px solid black;"">
             <p>&copy; 2024 Wellbeing Expression. All rights reserved.</p>
             <a href="https://www.facebook.com/relaxkidsanglesey" target="_blank">
                 <i class="fab fa-facebook"></i> Facebook Page
@@ -218,12 +217,13 @@
                 
             </div>
             <div>
-                <a href="https://cleandesignuk.com/" target="_blank" class="btn ">Website By Clean Design UK</button>
+                <a href="https://cleandesignuk.com/" target="_blank" class="btn ">Website By Clean Design UK</a>
             </div>
         </div>
         
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

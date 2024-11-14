@@ -6,6 +6,12 @@ body {
     color: #313638; /* Onyx */
     line-height: 1.6;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+outline: none;
+box-shadow: none;
+}
 
 @font-face {
     font-family: 'GT Super Display Regular';
@@ -125,7 +131,7 @@ h3, h4, h5, h6, a {
 .service-item {
     background-color: #E8E9EB; /* Anti-flash white */
     color: #313638; /* Onyx */
-    border: 1px solid #9BC969; /* Bright Light Green */
+    border: 1px solid #F06543; /* Bright Light Green */
     border-radius: 10px;
     padding: 30px;
     transition: box-shadow 0.3s ease, transform 0.3s;

@@ -23,11 +23,12 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg  fixed-top custom-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Wellbeing Expression Logo" height="50">
+        <div class="container d-flex">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/wellbeingexpressionlogo.webp" alt="Wellbeing Expression Logo" class="rounded " style="height:40px; border:1px solid black;"> 
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            <div class="lead">Wellbeing Expression</div>
+            <button class="navbar-toggler mx-auto  d-flex justify-self-center align-items-center d-md-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -193,7 +194,11 @@
                     <p><i class="fa fa-map-marker"></i> Location: Holyhead & Anglesey, North Wales</p>
                 </div>
                 <div class="col-lg-6">
-                    <form action="submit_form.php" method="post">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="e9ebd8af-8e78-4529-8bc6-7dc833e3b7fb">
+                        <!-- Honeypot to prevent spam -->
+                        <input type="hidden" name="honeypot" style="display:none">
                         <div class="mb-3">
                             <input type="text" name="name" placeholder="Your Name" class="form-control" required>
                         </div>
@@ -203,9 +208,10 @@
                         <div class="mb-3">
                             <textarea name="message" rows="5" placeholder="Your Message" class="form-control" required></textarea>
                         </div>
+                        <div id="form-status" class="mb-3"></div>
                         <div class="d-flex justify-content-center align-items-center my-2 py-2">
-                        <button type="submit" class="btn custom-btn">Send Message</button>
-                    </div>
+                            <button type="submit" class="btn custom-btn">Send Message</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -215,7 +221,7 @@
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container text-center">
-            <img src="images/logo-footer.png" alt="Wellbeing Expression Logo" class="footer-logo mb-3">
+            <img src="images/wellbeingexpressionlogo.webp" alt="Wellbeing Expression Logo" class="rounded " style="height:50px; border:1px solid black;"> 
             <p>&copy; 2024 Wellbeing Expression. All rights reserved.</p>
             <a href="https://www.facebook.com/relaxkidsanglesey" target="_blank">
                 <i class="fab fa-facebook"></i> Facebook Page
@@ -251,6 +257,60 @@
             document.getElementById('cookieConsentBanner').style.display = 'block';
         }
     };
+</script>
+<!-- Include SweetAlert2 CSS and JS for better alert messages -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- JavaScript Code -->
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var form = e.target;
+    var data = new FormData(form);
+
+    // Disable the submit button to prevent multiple submissions
+    form.querySelector('button[type="submit"]').disabled = true;
+
+    fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(function(response) {
+        form.querySelector('button[type="submit"]').disabled = false;
+        if (response.ok) {
+            // Show success message
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent',
+                text: 'Thank you for contacting us. We will get back to you soon.',
+                confirmButtonColor: '#F09D51'
+            });
+            form.reset();
+        } else {
+            // Show error message
+            response.json().then(function(data) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: data.message || 'An error occurred while submitting the form.',
+                    confirmButtonColor: '#F09D51'
+                });
+            });
+        }
+    }).catch(function(error) {
+        form.querySelector('button[type="submit"]').disabled = false;
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'An error occurred while submitting the form.',
+            confirmButtonColor: '#F09D51'
+        });
+    });
+});
 </script>
 
 </body>
