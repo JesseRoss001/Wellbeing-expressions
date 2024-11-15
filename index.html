@@ -23,11 +23,11 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg  fixed-top custom-navbar">
-        <div class="container d-flex">
-            <a class="navbar-brand" href="index.html">
+        <div class="container d-flex m-0">
+            <a class="navbar-brand me-1" href="index.html">
                 <img src="images/wellbeingexpressionlogo.webp" alt="Wellbeing Expression Logo" class="rounded " style="height:40px; border:1px solid black;"> 
             </a>
-            <div class="lead">Wellbeing Expression</div>
+            <div class="heading-nav">Wellbeing Expression</div>
             <button class="navbar-toggler mx-auto  d-flex justify-self-center align-items-center d-md-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,31 +54,48 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <div class="text-center mb-4">
-                <h2>About Wellbeing Expression</h2>
-                <p>Helping clients express themselves and find relief through creative outlets.</p>
+  <!-- About Section -->
+<section id="about" class="section about-section">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2>About Wellbeing Expression</h2>
+            <p>Helping clients express themselves and find relief through creative outlets.</p>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-9 col-lg-6 d-flex justify-content-center align-items-center py-2">
+                <img src="https://res.cloudinary.com/dsedezvzs/image/upload/v1730287077/Reduces_Stress_Anxiety_rxplzy.jpg" alt="Creative Art Therapy" class="img-fluid rounded shadow">
             </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-9 col-lg-6 d-flex justify-content-center align-items-center py-2">
-                    <img src="https://res.cloudinary.com/dsedezvzs/image/upload/v1730287077/Reduces_Stress_Anxiety_rxplzy.jpg" alt="Creative Art Therapy" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-lg-6">
-                    <p>
-                        At Wellbeing Expression, we provide a safe, welcoming space where individuals can engage in various forms of creativity for well-being and mental health. Our sessions focus on creativity without the need for prior skills or expectations.
-                    </p>
-                    <p>
-                        We offer a range of activities including visual arts, music, writing, pottery, and sensory-focused experiences designed to be relaxing and therapeutic.
-                    </p>
-                    <div class="d-flex justify-content-center align-items-center my-2 py-2">
-                        <a href="services.html" class="btn custom-btn  ">Services We Provide</a>
-                    </div>
+            <div class="col-lg-6">
+                <p>
+                    At Wellbeing Expression, we provide a safe, welcoming space where individuals can engage in various forms of creativity for well-being and mental health. Our sessions focus on creativity without the need for prior skills or expectations.
+                </p>
+                <p>
+                    We offer a range of activities including visual arts, music, writing, pottery, and sensory-focused experiences designed to be relaxing and therapeutic.
+                </p>
+                <div class="d-flex justify-content-center align-items-center my-2 py-2">
+                    <a href="services.html" class="btn custom-btn">Services We Provide</a>
+                    <button type="button" class="btn custom-btn ms-3" data-bs-toggle="modal" data-bs-target="#bioModal">Read May's Bio</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Bio Modal -->
+<div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bioModalLabel">About May</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>May is a dedicated HICAT (Holistic Integrated Creative Art Therapy) student based on Anglesey in North Wales.</p>
+                <p>Her passion is for integrating creativity and healing through all her work and mediums of expression. With a strong career background in listening, understanding, and responding to people’s needs, May has always had an aptitude for the creative arts and wanted to share this to help others – adults as well as youth - demonstrating her commitment to fostering wellbeing and self-expression through the arts.</p>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Cookie Consent Banner -->
 <div class="cookie-consent-banner" id="cookieConsentBanner" style="display: none;">
     <span>We use cookies to ensure you get the best experience on our website. <a href="policy.html" style="color: #fff; text-decoration: underline;">Learn more</a>.</span>
