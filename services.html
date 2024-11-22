@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Creative Wellbeing Sessions in Holyhead and Beyond - Wellbeing Expression</title>
-    <meta name="description" content="Join Wellbeing Expression in Holyhead and beyond for creative wellbeing sessions that use art, music, and therapeutic expression to enhance mental health and emotional resilience.">
-    <meta name="keywords" content="Creative Wellbeing, Art Therapy in Holyhead, Mental Health Support North Wales, Corporate Wellness Holyhead, Group Therapy Workshops North Wales, One-to-One Art Therapy Anglesey">
+    <title>Creative Wellbeing Sessions in Holyhead and North Wales - Wellbeing Expression</title>
+    <meta name="description" content="Join Wellbeing Expression in Anglesey and beyond for creative wellbeing sessions that use art, music, and therapeutic expression to enhance mental health and emotional resilience.">
+    <meta name="keywords" content="Creative Wellbeing, Art Therapy in Holyhead, Mental Health Support North Wales, Corporate Wellness Gwynedd, Group Therapy Workshops North Wales, One-to-One Art Therapy Anglesey">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -69,7 +69,7 @@
     <section class="page-header hero-section">
         <div class="container text-center">
             <h1>Creative Wellbeing Sessions</h1>
-            <p>Based in Holyhead serving Anglesey and Beyond with, holistic wellbeing support</p>
+            <p>Based in Holyhead serving Anglesey and Gwynedd with, holistic wellbeing support</p>
         </div>
     </section>
 
@@ -77,7 +77,7 @@
     <section class="section sessions-section">
         <div class="container">
             <div class="text-center mb-4">
-                <h2>Explore Our Holistic Sessions in Holyhead and Beyond</h2>
+                <h2>Explore Our Holistic Sessions in North Wales</h2>
                 <p>Wellbeing Expression offers personalised and group therapy sessions that incorporate a wide range of creative approaches to support mental health and emotional well-being for clients across Holyhead, Anglesey, and beyond.</p>
             </div>
 
@@ -150,7 +150,7 @@
                     </div>
                     <div class="col-md-6">
                         <h3>School Art Therapy Programmes in North Wales</h3>
-                        <p>Our school-based programmes help students explore emotions, develop social skills, and foster emotional resilience. Available across primary and secondary schools in Holyhead and beyond.</p>
+                        <p>Our school-based programmes help students explore emotions, develop social skills, and foster emotional resilience. Available across primary and secondary schools in North Wales.</p>
                         <ul>
                             <li><strong>Duration:</strong> Customisable for individual or ongoing sessions</li>
                             <li><strong>Age Groups:</strong> Primary and secondary students</li>
@@ -163,43 +163,40 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
             <div class="text-center mb-4">
-                <h2>Contact Wellbeing Expression - Serving Holyhead and Beyond</h2>
-                <p>Reach out to discover more about our holistic sessions across Holyhead, Anglesey, and beyond. We’re here to support your creative and mental wellness journey.</p>
+                <h2>Contact Us</h2>
+                <p>Get in touch to book a session or for any inquiries.</p>
             </div>
-            <form class="contact-form mt-4" action="submit_form.php" method="post">
-                <!-- Hidden key input field added here -->
-                <input type="hidden" name="key" value="e9ebd8af-8e78-4529-8bc6-7dc833e3b7fb">
-                <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                    </div>
+            <div class="row">
+                <div class="col-lg-6 contact-info">
+                    <p><i class="fa fa-envelope"></i> Email: <a class="text-dark text-decoration-none fw-bold" href="mailto:wellbeingexpression@gmail.com">wellbeingexpression@gmail.com</a></p>
+                    <p><i class="fa fa-phone"></i> Phone: <a  class="text-dark text-decoration-none fw-bold" href="tel:+441234567890">01234 567 890</a></p>
+                    <p><i class="fa fa-map-marker"></i> Location: Gwynedd & Anglesey, North Wales</p>
                 </div>
-                <div class="row mb-3">
-                    <div class="col">
-                        <select name="session" class="form-control" required>
-                            <option value="" disabled selected>Choose Session...</option>
-                            <option>Group Therapy Workshops - North Wales</option>
-                            <option>One-to-One Art Therapy - Anglesey</option>
-                            <option>Corporate Wellness Workshops - North Wales</option>
-                            <option>School Programmes - North Wales</option>
-                            <option>Discovery Call</option>
-                        </select>
-                    </div>
+                <div class="col-lg-6">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="e9ebd8af-8e78-4529-8bc6-7dc833e3b7fb">
+                        <!-- Honeypot to prevent spam -->
+                        <input type="hidden" name="honeypot" style="display:none">
+                        <div class="mb-3">
+                            <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" rows="5" placeholder="Your Message" class="form-control" required></textarea>
+                        </div>
+                        <div id="form-status" class="mb-3"></div>
+                        <div class="d-flex justify-content-center align-items-center my-2 py-2">
+                            <button type="submit" class="btn custom-btn">Send Message</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="row mb-4">
-                    <div class="col">
-                        <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn custom-btn btn-lg w-100">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -225,5 +222,59 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Include SweetAlert2 CSS and JS for better alert messages -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- JavaScript Code -->
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var form = e.target;
+    var data = new FormData(form);
+
+    // Disable the submit button to prevent multiple submissions
+    form.querySelector('button[type="submit"]').disabled = true;
+
+    fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(function(response) {
+        form.querySelector('button[type="submit"]').disabled = false;
+        if (response.ok) {
+            // Show success message
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent',
+                text: 'Thank you for contacting us. We will get back to you soon.',
+                confirmButtonColor: '#F09D51'
+            });
+            form.reset();
+        } else {
+            // Show error message
+            response.json().then(function(data) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: data.message || 'An error occurred while submitting the form.',
+                    confirmButtonColor: '#F09D51'
+                });
+            });
+        }
+    }).catch(function(error) {
+        form.querySelector('button[type="submit"]').disabled = false;
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'An error occurred while submitting the form.',
+            confirmButtonColor: '#F09D51'
+        });
+    });
+});
+</script>
 </body>
 </html>
